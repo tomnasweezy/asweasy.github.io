@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
+.parentBox {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.wrapper {
+  border: 1px solid red;
+  display: contents;
+
+}
+
+
+.InnerBox {
+  background-color: #FFA0AE;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: scale 1s, opacity 1s ease-in-out;
+  animation: animatebackground 15s linear infinite;
+  background: url("https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+    /* background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(48, 156, 180, 1) 39%); */
+    /* transition: transform 0.1s; */
+}
+
+.hello {
+  color: white;
+  font-size: 65px;
+  text-align: center;
+  margin: auto;
+  transition: opacity 1s;
+}
+
+.biowraper {
+  width: 100%;
+  height: auto;
+  transition: opacity 1s;
+  opacity: 0;
+  padding: 8px;
+  /* box-shadow: 10px 10px 10px 10px pink; */
+}
+
+.namewrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 20px;
+  place-content: center;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.svg1 {
+  margin: auto;
+  stroke: black;
+  width: 15px;
+  height: 20px;
+  fill: none;
+  stroke: white;
+  stroke-width: 0.5;
+  /* stroke-linecap: round;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 1; */
+}
+
+.path {
+  stroke-dasharray: 200;
+  width: 20px;
+  height: 20px;
+  animation: dash 4s linear forwards;
+}
+
+.poswrapper {
+  display: flex;
+  /* width: 100%; */
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+
+
+.live {
+  font-size: 8px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Shadows Into Light';
+  text-align: center;
+  /* line-height: 0.8;
+  line-height: 2.5; */
+}
+
+.live:nth-child(1) {
+  font-size: 8px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Shadows Into Light';
+  text-align: center;
+  line-height: 0.8;
+  line-height: 2.5;
+}
+
+.nlimage {
+  width: 10px;
+  line-height: 0.8;
+  height: 10px;
+  rotate: 20px;
+  transform: rotate(-18deg);
+
+}
+
+/* .firstline {
+  flex: 1;
+} */
+
+.bio {
+
+  height: auto;
+  text-align: start;
+  font-size: 10px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Shadows Into Light';
+  text-align: center;
+  line-height: 0.8;
+  line-height: 2.5;
+  padding-right: 5px;
+}
+
+.POS {
+  position: absolute;
+  margin-top: 13.5px;
+  width: 100%;
+  animation: POS 10s infinite ease-in-out;
+  filter: contrast(20) blur(1px);
+  font-size: 10px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Shadows Into Light';
+}
+
+.POS:nth-child(1) {
+  animation-delay: -8s;
+}
+
+.POS:nth-child(2) {
+  animation-delay: -6s;
+}
+
+.POS:nth-child(3) {
+  animation-delay: -4s;
+}
+
+.POS:nth-child(4) {
+  animation-delay: -2s;
+}
+
+.live {
+  font-size: 10px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Shadows Into Light';
+  text-align: start;
+  margin: 0 0 0 20px;
+
+  line-height: 0px;
+}
+
+
+.infowrapper {
+
+
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  height: 20px;
+  position: absolute;
+  /* top: 189px; */
+  bottom: 0;
+}
+
+.infowrapper img {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+
+}
+
+.infowrapper img:hover {
+  opacity: 0.5;
+  /* background-color: white; */
+}
+
+
+
+@keyframes animatebackground {
+  0% {
+    background-position: 400px 400px;
+  }
+
+  100% {
+    background-position: 200px 200px;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 300;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes POS {
+
+  0%,
+  5%,
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  20%,
+  80% {
+    filter: blur(1em);
+    opacity: 0;
+  }
+}
