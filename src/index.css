@@ -133,7 +133,7 @@
 
 .POS:nth-child(1) {
   animation-delay: -8s;
-  left: -4px;
+  left: 10px;
   font-size: 30px;
 }
 
