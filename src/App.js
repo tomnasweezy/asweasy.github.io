@@ -59,12 +59,12 @@ function App() {
           <div id="biowraper" className="biowraper">
             <p id="bio" className="bio">
               Hi, I'm Ahmed<br></br>
-              <span className="ltbca">like to be called an</span>
+              <span className="ltbca">like to be called a</span>
             </p>
             <div className="morphing">
               <p className="POS">Devops Engineer</p>
-              <p className="POS">Implementation Manager</p>
-              <p className="POS">Integration Engineer</p>
+              {/* <p className="POS">Implementation Manager</p>
+              <p className="POS">Integration Engineer</p> */}
             </div>
             <div className="resttextwrapper">
               <p>

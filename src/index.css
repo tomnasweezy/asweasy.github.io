@@ -277,8 +277,8 @@
     white-space: nowrap;
     margin: 0px;
     width: 100%;
-    animation: POS 10s infinite ease-in-out;
-    filter: contrast(20) blur(1px);
+    /* animation: POS 10s infinite ease-in-out;
+    filter: contrast(20) blur(1px); */
     font-size: 25px;
     color: black;
     mix-blend-mode: multiply;
