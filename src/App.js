@@ -62,10 +62,12 @@ function App() {
               <span className="ltbca">like to be called an</span>
             </p>
             <div className="morphing">
+              <p className="POS">Devops Engineer</p>
               <p className="POS">Implementation Manager</p>
               <p className="POS">Integration Engineer</p>
               <p className="POS">Frontend developer</p>
               <p className="POS">Solution Engineer</p>
+              <p className="POS">Application Engineer</p>
             </div>
             <div className="resttextwrapper">
               <p>
