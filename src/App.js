@@ -65,9 +65,6 @@ function App() {
               <p className="POS">Devops Engineer</p>
               <p className="POS">Implementation Manager</p>
               <p className="POS">Integration Engineer</p>
-              <p className="POS">Frontend developer</p>
-              <p className="POS">Solution Engineer</p>
-              <p className="POS">Application Engineer</p>
             </div>
             <div className="resttextwrapper">
               <p>
