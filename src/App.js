@@ -1,24 +1,19 @@
 import "./App.css";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import netherlands from "./Assets/netherlands.png"; // with import
-import github from "./Assets/github.svg"; // with import
-import linkedin from "./Assets/linkedin.svg"; // with import
-import resume from "./Assets/resume.svg"; // with import
-import AssignmentIcon from "@mui/icons-material/Assignment";
 
-const icon = {
-  hidden: {
-    opacity: 0,
-    pathLength: 0,
-    fill: "black",
-  },
-  visible: {
-    opacity: 1,
-    pathLength: 1,
-    fill: "rgba(255, 255, 255, 1)",
-  },
-};
+// const icon = {
+//   hidden: {
+//     opacity: 0,
+//     pathLength: 0,
+//     fill: "black",
+//   },
+//   visible: {
+//     opacity: 1,
+//     pathLength: 1,
+//     fill: "rgba(255, 255, 255, 1)",
+//   },
+// };
 
 function App() {
   const [biog, setbio] = useState(true);
@@ -69,7 +64,7 @@ function App() {
             <div className="resttextwrapper">
               <p>
                 currently living in the Netherlands
-                <img className="nlimage" src={netherlands} />
+                <img alt="netherlands flag" className="nlimage" src={netherlands} />
                 <br></br>
                 whom will always strive for innovation and efficiency in my
                 work, regardless of my role, as long as I have support.
@@ -104,7 +99,6 @@ function App() {
 
               <div>
                 <a href="https://drive.google.com/file/d/1jrxEBJB3X9_So2l-X1lhm08Q0iic-0JX/view?usp=drive_link">
-                  {/* <img className="resume" src={resume} /> */}
                   <svg
                     viewBox="0 0 512 512"
                     fill="black"
