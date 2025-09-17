@@ -103,7 +103,7 @@ function App() {
               </div>
 
               <div>
-                <a href="https://drive.google.com/file/d/1G2jjCB8cJGGCMr32Li7pW2fxJTTenAW0/view?usp=drive_link">
+                <a href="https://drive.google.com/file/d/1jrxEBJB3X9_So2l-X1lhm08Q0iic-0JX/view?usp=drive_link">
                   {/* <img className="resume" src={resume} /> */}
                   <svg
                     viewBox="0 0 512 512"
