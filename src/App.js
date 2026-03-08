@@ -1,7 +1,13 @@
 import "./App.css";
 import { useState } from "react";
 import netherlands from "./Assets/netherlands.png"; // with import
+import Clarity from '@microsoft/clarity';
+const projectId = "vsorv9bmev"
 
+Clarity.init(projectId);
+Clarity.setTag("env", "production");
+Clarity.consentV2(); // default value is set to { ad_Storage: 'granted', analytics_Storage: 'granted' }
+Clarity.consentV2({ ad_Storage: 'denied', analytics_Storage: 'granted' });
 // const icon = {
 //   hidden: {
 //     opacity: 0,
